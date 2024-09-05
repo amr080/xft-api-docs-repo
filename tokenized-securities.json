@@ -1,14 +1,14 @@
 {
   "info": {
-    "description": "<h2>Overview</h2>\n            <p>Dinari API for enterprise usage. To authenticate, click on \"Authenticate\" on the left sidebar and follow the instructions.</p>\n            <h2>Terms</h2>\n            <p>IMPORTANT: Each user that purchases dShares must agree to our <a href=\"https://dinari.com/terms\">terms</a> and have undergone KYC and AML.</p>\n            <p>When using this API to allow your users to purchase dShares, please ensure that the user understands their rights and restrictions before purchasing. Present the terms linked <a href=\"https://dinari.com/terms\">here</a> to your users and have them accept before purchasing dShares.</p>\n            <h2 id=\"app-types\">App Types</h2>\n            <p>There are four types of apps that can be created:</p>\n            <h3>Dinari Managed Wallet</h3>\n            <p>Partner uses a Dinari Managed Wallet to purchase dShares.</p>\n            <h3>Customer Managed Wallet</h3>\n            <p>Partner uses an existing owned wallet to purchase dShares.</p>\n            <h3>Non-custodial Managed KYC</h3>\n            <p>Customers use their own wallet to purchase dShares, Dinari manages KYC verification.</p>\n            <h3>Non-custodial Partner KYC</h3>\n            <p>Customers use their own wallet to purchase dShares, Partners manage KYC verification (subject to approval)</p>\n            <h2><a href=\"#tag--Stocks\">Stocks</a></h2>\n            <p>Get information about available stocks, such as current and historical stock prices, aggregated summary information, and news articles from these endpoints.</p>\n            <h2>Managed Accounts Solution</h2>\n            <p>Our managed accounts solution offers a more traditional way to integrate with us as a trading platform without the need for in-depth blockchain knowledge or expertise. We handle the details of all the blockchain transactions so that your organization can focus more on delivering for your own users. <strong>This endpoint can only be reached with a Dinari Managed Wallet App</strong></p>\n            <h3><a href=\"#tag--Managed-Accounts\">Managed Accounts</a></h2>\n            <p>Find a list of account portfolio items (cash and stock assets) through the \"Get Portfolio\" endpoint, or get a list of your organization's accounts with the \"Get Acccounts\" endpoint.</p>\n            <h3><a href=\"#tag--Managed-Stock-Orders\">Managed Stock Orders</a></h3>\n            <p>Get, place, or cancel orders with these endpoints directly without needing to worry about token contracts or deciphering unfamiliar Web3 errors.</p>\n        ",
+    "description": "<h2>Overview</h2>\n            <p>XFT API for enterprise usage. To authenticate, click on \"Authenticate\" on the left sidebar and follow the instructions.</p>\n            <h2>Terms</h2>\n            <p>IMPORTANT: Each user that purchases dShares must agree to our <a href=\"https://XFT.com/terms\">terms</a> and have undergone KYC and AML.</p>\n            <p>When using this API to allow your users to purchase dShares, please ensure that the user understands their rights and restrictions before purchasing. Present the terms linked <a href=\"https://XFT.com/terms\">here</a> to your users and have them accept before purchasing dShares.</p>\n            <h2 id=\"app-types\">App Types</h2>\n            <p>There are four types of apps that can be created:</p>\n            <h3>XFT Managed Wallet</h3>\n            <p>Partner uses a XFT Managed Wallet to purchase dShares.</p>\n            <h3>Customer Managed Wallet</h3>\n            <p>Partner uses an existing owned wallet to purchase dShares.</p>\n            <h3>Non-custodial Managed KYC</h3>\n            <p>Customers use their own wallet to purchase dShares, XFT manages KYC verification.</p>\n            <h3>Non-custodial Partner KYC</h3>\n            <p>Customers use their own wallet to purchase dShares, Partners manage KYC verification (subject to approval)</p>\n            <h2><a href=\"#tag--Stocks\">Stocks</a></h2>\n            <p>Get information about available stocks, such as current and historical stock prices, aggregated summary information, and news articles from these endpoints.</p>\n            <h2>Managed Accounts Solution</h2>\n            <p>Our managed accounts solution offers a more traditional way to integrate with us as a trading platform without the need for in-depth blockchain knowledge or expertise. We handle the details of all the blockchain transactions so that your organization can focus more on delivering for your own users. <strong>This endpoint can only be reached with a XFT Managed Wallet App</strong></p>\n            <h3><a href=\"#tag--Managed-Accounts\">Managed Accounts</a></h2>\n            <p>Find a list of account portfolio items (cash and stock assets) through the \"Get Portfolio\" endpoint, or get a list of your organization's accounts with the \"Get Acccounts\" endpoint.</p>\n            <h3><a href=\"#tag--Managed-Stock-Orders\">Managed Stock Orders</a></h3>\n            <p>Get, place, or cancel orders with these endpoints directly without needing to worry about token contracts or deciphering unfamiliar Web3 errors.</p>\n        ",
     "contact": {
-      "email": "hello@dinari.com"
+      "email": "hello@XFT.com"
     },
     "license": {
       "name": "Contact us"
     },
-    "termsOfService": "https://dinari.com/terms",
-    "title": "Dinari API [Enterprise]",
+    "termsOfService": "https://XFT.com/terms",
+    "title": "XFT API [Enterprise]",
     "version": "v20240829-a6945c1"
   },
   "components": {
@@ -692,7 +692,7 @@
             "example": "2024-06-10"
           },
           "status": {
-            "description": "The status of Dinari's processing of the split. Stocks for which a split is \n                `IN_PROGRESS` will not be available for trading.",
+            "description": "The status of XFT's processing of the split. Stocks for which a split is \n                `IN_PROGRESS` will not be available for trading.",
             "$ref": "#/components/schemas/StockSplitStatus"
           }
         },
@@ -2078,7 +2078,7 @@
         },
         "summary": "Get Health Status",
         "tags": [
-          "Dinari API [Enterprise]"
+          "XFT API [Enterprise]"
         ],
         "operationId": "getHealth"
       }
@@ -2146,7 +2146,7 @@
           }
         },
         "tags": [
-          "Dinari API [Enterprise]"
+          "XFT API [Enterprise]"
         ],
         "description": "Returns all orders",
         "operationId": "getOrders",
@@ -2202,7 +2202,7 @@
           }
         },
         "tags": [
-          "Dinari API [Enterprise]"
+          "XFT API [Enterprise]"
         ],
         "description": "Searches for an order(s)",
         "operationId": "getOrdersSearch",
@@ -2704,7 +2704,7 @@
         "summary": "Get list of Stock Tokens",
         "description": "Returns list of Stocks with its associated StockToken on a specific chain",
         "tags": [
-          "Dinari API [Enterprise]"
+          "XFT API [Enterprise]"
         ],
         "operationId": "getTokenByChainId",
         "security": [
@@ -2746,7 +2746,7 @@
           }
         },
         "tags": [
-          "Dinari API [Enterprise]"
+          "XFT API [Enterprise]"
         ],
         "description": "Returns Balances for Entity Wallets",
         "operationId": "getTokenBalancesByWallet",
@@ -4385,8 +4385,8 @@
   },
   "tags": [
     {
-      "name": "Dinari API [Enterprise]",
-      "description": "Dinari API for enterprise usage"
+      "name": "XFT API [Enterprise]",
+      "description": "XFT API for enterprise usage"
     }
   ],
   "openapi": "3.0.3"
