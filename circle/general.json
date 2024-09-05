@@ -2,13 +2,13 @@
   "openapi": "3.0.2",
   "servers": [
     {
-      "url": "https://api-sandbox.circle.com"
+      "url": "https://api-sandbox.XFT.com"
     }
   ],
   "info": {
     "version": "2.11.1",
     "title": "API Overview",
-    "description": "Common endpoints shared across all Circle APIs."
+    "description": "Common endpoints shared across all XFT APIs."
   },
   "tags": [
     {
@@ -377,8 +377,8 @@
                         {
                           "id": "b8627ae8-732b-4d25-b947-1df8f4007a29",
                           "default": true,
-                          "cardDescriptor": "CIRCLE LLC.",
-                          "achDescriptor": "CIRCLE LLC."
+                          "cardDescriptor": "XFT LLC.",
+                          "achDescriptor": "XFT LLC."
                         }
                       ]
                     }
@@ -583,12 +583,12 @@
           "cardDescriptor": {
             "type": "string",
             "description": "Descriptor that appears on cardholders' bank statements for card payments submitted through this channel.",
-            "example": "CIRCLE LLC."
+            "example": "XFT LLC."
           },
           "achDescriptor": {
             "type": "string",
             "description": "Descriptor that appears on end-users' bank statements for ACH payments submitted through this channel.",
-            "example": "CIRCLE LLC."
+            "example": "XFT LLC."
           }
         }
       },
@@ -669,7 +669,7 @@
     },
     "headers": {
       "XRequestId": {
-        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with Circle support.",
+        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with XFT support.",
         "schema": {
           "type": "string",
           "format": "uuid",

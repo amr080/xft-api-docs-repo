@@ -2,13 +2,13 @@
   "openapi": "3.0.2",
   "servers": [
     {
-      "url": "https://api-sandbox.circle.com"
+      "url": "https://api-sandbox.XFT.com"
     }
   ],
   "info": {
     "version": "2.11.1",
     "title": "Payments API",
-    "description": "The Circle Payments API allows you to take payments from your end users via traditional methods such as debit & credit cards and receive settlement in USDC.\n\nThe Circle Payments API has been designed with any business or internet commerce in mind, not just crypto applications, and it's based on Circle's extensive experience processing millions of card payments since 2014.\n"
+    "description": "The XFT Payments API allows you to take payments from your end users via traditional methods such as debit & credit cards and receive settlement in USDC.\n\nThe XFT Payments API has been designed with any business or internet commerce in mind, not just crypto applications, and it's based on XFT's extensive experience processing millions of card payments since 2014.\n"
   },
   "tags": [
     {
@@ -222,7 +222,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -757,7 +757,7 @@
                         "externalRef": "YYYYMMDDXXXXXXXX012345",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "channel": "ba943ff1-ca16-49b2-ba55-1057e70ca5c7",
@@ -847,7 +847,7 @@
           }
         },
         "summary": "Capture a payment (BETA)",
-        "description": "Warning: Please contact Circle support if you are planning on using this feature.\n\nThe given amount will be captured for the authorized payment if possible. If no amount is specified, the full amount\nwill be captured. You can only capture once per authorization.\n\nA successful response does *not* mean the payment has been captured. It only means the capture request was successfully submitted.\n",
+        "description": "Warning: Please contact XFT support if you are planning on using this feature.\n\nThe given amount will be captured for the authorized payment if possible. If no amount is specified, the full amount\nwill be captured. You can only capture once per authorization.\n\nA successful response does *not* mean the payment has been captured. It only means the capture request was successfully submitted.\n",
         "operationId": "capturePayment",
         "tags": [
           "Payments"
@@ -1008,7 +1008,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -1211,7 +1211,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -2203,7 +2203,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -2376,7 +2376,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -2472,7 +2472,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -2511,7 +2511,7 @@
         },
         "responses": {
           "201": {
-            "description": "Successfully converted a digital token to a Circle token account.",
+            "description": "Successfully converted a digital token to a XFT token account.",
             "headers": {
               "X-Request-Id": {
                 "$ref": "#/components/headers/XRequestId"
@@ -2976,7 +2976,7 @@
         ],
         "summary": "Fetch exchange rate",
         "operationId": "exchangeRate",
-        "description": "Fetches an indicative exchange rate between two currencies. Either the from currency or to currency must be USD.\n\nNote: The current market exchange rate will be applied when Circle receives the deposit.\n",
+        "description": "Fetches an indicative exchange rate between two currencies. Either the from currency or to currency must be USD.\n\nNote: The current market exchange rate will be applied when XFT receives the deposit.\n",
         "tags": [
           "Payments"
         ],
@@ -3650,7 +3650,7 @@
     },
     "headers": {
       "XRequestId": {
-        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with Circle support.",
+        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with XFT support.",
         "schema": {
           "type": "string",
           "format": "uuid",
@@ -4044,7 +4044,7 @@
       },
       "RiskEvaluation": {
         "type": "object",
-        "description": "Results of risk evaluation. Only present if the payment is denied by Circle's risk service.",
+        "description": "Results of risk evaluation. Only present if the payment is denied by XFT's risk service.",
         "nullable": true,
         "properties": {
           "decision": {
@@ -4297,7 +4297,7 @@
         "type": "string",
         "description": "Email of the user.",
         "maxLength": 1024,
-        "example": "satoshi@circle.com"
+        "example": "satoshi@XFT.com"
       },
       "PhoneNumber": {
         "type": "string",

@@ -2,13 +2,13 @@
   "openapi": "3.0.2",
   "servers": [
     {
-      "url": "https://api-sandbox.circle.com"
+      "url": "https://api-sandbox.XFT.com"
     }
   ],
   "info": {
     "version": "2.11.1",
-    "title": "All Circle APIs",
-    "description": "Circle's General, Core Functionality, Payments, Payouts, Accounts, and Crypto Payments APIs bundled into one OpenAPI Specification."
+    "title": "All XFT APIs",
+    "description": "XFT's General, Core Functionality, Payments, Payouts, Accounts, and Crypto Payments APIs bundled into one OpenAPI Specification."
   },
   "tags": [
     {
@@ -453,8 +453,8 @@
                         {
                           "id": "b8627ae8-732b-4d25-b947-1df8f4007a29",
                           "default": true,
-                          "cardDescriptor": "CIRCLE LLC.",
-                          "achDescriptor": "CIRCLE LLC."
+                          "cardDescriptor": "XFT LLC.",
+                          "achDescriptor": "XFT LLC."
                         }
                       ]
                     }
@@ -710,7 +710,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -883,7 +883,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -979,7 +979,7 @@
                           "reason": "3000"
                         },
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -1018,7 +1018,7 @@
         },
         "responses": {
           "201": {
-            "description": "Successfully converted a digital token to a Circle token account.",
+            "description": "Successfully converted a digital token to a XFT token account.",
             "headers": {
               "X-Request-Id": {
                 "$ref": "#/components/headers/XRequestId"
@@ -1344,7 +1344,7 @@
           }
         ],
         "summary": "Get Wire instructions",
-        "description": "Get the wire transfer instructions into the Circle bank account given your bank account id.",
+        "description": "Get the wire transfer instructions into the XFT bank account given your bank account id.",
         "operationId": "getBusinessWireAccountInstructions",
         "tags": [
           "Wires"
@@ -1373,7 +1373,7 @@
                       "data": {
                         "trackingRef": "CIR13FB13A",
                         "beneficiary": {
-                          "name": "CIRCLE INTERNET FINANCIAL INC",
+                          "name": "XFT INTERNET FINANCIAL INC",
                           "address1": "99 HIGH STREET",
                           "address2": "BOSTON MA 02110"
                         },
@@ -1623,7 +1623,7 @@
           }
         ],
         "summary": "Get CBIT instructions",
-        "description": "Get the CBIT transfer instructions into the Circle bank account given your bank account id.",
+        "description": "Get the CBIT transfer instructions into the XFT bank account given your bank account id.",
         "operationId": "getBusinessCbitAccountInstructions",
         "tags": [
           "CBIT"
@@ -1878,7 +1878,7 @@
           }
         ],
         "summary": "Get PIX instructions",
-        "description": "Get the PIX transfer instructions into the Circle bank account given your bank account id.",
+        "description": "Get the PIX transfer instructions into the XFT bank account given your bank account id.",
         "operationId": "getBusinessPixAccountInstructions",
         "tags": [
           "PIX"
@@ -1911,7 +1911,7 @@
                         "accountNumber": "322286803",
                         "accountType": "checking",
                         "taxId": "57112345675712",
-                        "name": "CIRCLE INTERNET FINANCIAL INC"
+                        "name": "XFT INTERNET FINANCIAL INC"
                       }
                     }
                   }
@@ -1936,7 +1936,7 @@
           }
         ],
         "summary": "Create a deposit address",
-        "description": "Generates a new blockchain address for a wallet for a given currency/chain pair. Circle may reuse addresses on blockchains that support reuse. For example, if you're requesting two addresses for depositing USD and ETH, both on Ethereum, you may see the same Ethereum address returned. Depositing cryptocurrency to a generated address will credit the associated wallet with the value of the deposit. Note: Circle Mint Singapore customers must verify all transfer recipients using the UI in the Circle Console, as transfers from unverified addresses will be held in `pending` status. \n",
+        "description": "Generates a new blockchain address for a wallet for a given currency/chain pair. XFT may reuse addresses on blockchains that support reuse. For example, if you're requesting two addresses for depositing USD and ETH, both on Ethereum, you may see the same Ethereum address returned. Depositing cryptocurrency to a generated address will credit the associated wallet with the value of the deposit. Note: XFT Mint Singapore customers must verify all transfer recipients using the UI in the XFT Console, as transfers from unverified addresses will be held in `pending` status. \n",
         "operationId": "createBusinessDepositAddress",
         "tags": [
           "Addresses"
@@ -2054,7 +2054,7 @@
           }
         ],
         "summary": "Create a recipient address",
-        "description": "Stores an external blockchain address. Once added, the recipient address must be verified to ensure that you know and trust each new address. Note: Circle Mint Singapore customers must verify all transfer recipients using the UI in the Circle Console, as transfers from unverified addresses will be held in `pending` status.\n",
+        "description": "Stores an external blockchain address. Once added, the recipient address must be verified to ensure that you know and trust each new address. Note: XFT Mint Singapore customers must verify all transfer recipients using the UI in the XFT Console, as transfers from unverified addresses will be held in `pending` status.\n",
         "operationId": "createBusinessRecipientAddress",
         "tags": [
           "Addresses"
@@ -3003,8 +3003,8 @@
                         "address": "0x45bfcf1a6289a0b77b4d3f7d12005a05949fd8c3",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2022-07-21T20:13:35.578678Z",
@@ -3126,8 +3126,8 @@
                           "addressTag": "123456789",
                           "metadata": {
                             "nickname": "sample nickname",
-                            "email": "satoshi@circle.com",
-                            "bns": "sample.circle"
+                            "email": "satoshi@XFT.com",
+                            "bns": "sample.XFT"
                           },
                           "status": "pending",
                           "createDate": "2020-04-10T02:13:30.000Z",
@@ -3191,8 +3191,8 @@
                         "addressTag": "123456789",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -3264,8 +3264,8 @@
                         "address": "0x45bfcf1a6289a0b77b4d3f7d12005a05949fd8c3",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2022-07-21T20:13:35.578678Z",
@@ -3498,7 +3498,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -4133,7 +4133,7 @@
                         "externalRef": "YYYYMMDDXXXXXXXX012345",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "channel": "ba943ff1-ca16-49b2-ba55-1057e70ca5c7",
@@ -4223,7 +4223,7 @@
           }
         },
         "summary": "Capture a payment (BETA)",
-        "description": "Warning: Please contact Circle support if you are planning on using this feature.\n\nThe given amount will be captured for the authorized payment if possible. If no amount is specified, the full amount\nwill be captured. You can only capture once per authorization.\n\nA successful response does *not* mean the payment has been captured. It only means the capture request was successfully submitted.\n",
+        "description": "Warning: Please contact XFT support if you are planning on using this feature.\n\nThe given amount will be captured for the authorized payment if possible. If no amount is specified, the full amount\nwill be captured. You can only capture once per authorization.\n\nA successful response does *not* mean the payment has been captured. It only means the capture request was successfully submitted.\n",
         "operationId": "capturePayment",
         "tags": [
           "Payments"
@@ -4384,7 +4384,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -4587,7 +4587,7 @@
                         "trackingRef": "24910599141085313498894",
                         "errorCode": "payment_failed",
                         "metadata": {
-                          "email": "satoshi@circle.com",
+                          "email": "satoshi@XFT.com",
                           "phoneNumber": "+14155555555"
                         },
                         "riskEvaluation": {
@@ -5931,7 +5931,7 @@
         ],
         "summary": "Fetch exchange rate",
         "operationId": "exchangeRate",
-        "description": "Fetches an indicative exchange rate between two currencies. Either the from currency or to currency must be USD.\n\nNote: The current market exchange rate will be applied when Circle receives the deposit.\n",
+        "description": "Fetches an indicative exchange rate between two currencies. Either the from currency or to currency must be USD.\n\nNote: The current market exchange rate will be applied when XFT receives the deposit.\n",
         "tags": [
           "Payments"
         ],
@@ -6279,7 +6279,7 @@
           }
         ],
         "summary": "Create a blockchain address",
-        "description": "Generates a new blockchain address for a wallet for a given currency/chain pair. Circle may reuse addresses on blockchains that support reuse. For example, if you're requesting two addresses for depositing USD and ETH, both on Ethereum, you may see the same Ethereum address returned. Depositing cryptocurrency to a generated address will credit the associated wallet with the value of the deposit.\n",
+        "description": "Generates a new blockchain address for a wallet for a given currency/chain pair. XFT may reuse addresses on blockchains that support reuse. For example, if you're requesting two addresses for depositing USD and ETH, both on Ethereum, you may see the same Ethereum address returned. Depositing cryptocurrency to a generated address will credit the associated wallet with the value of the deposit.\n",
         "operationId": "generateAddress",
         "tags": [
           "Wallets"
@@ -6933,7 +6933,7 @@
           }
         ],
         "summary": "List all transfers",
-        "description": "Searches for transfers involving the provided wallets. If no wallet ids are provided, searches all wallets associated with your Circle API account. If the date parameters are omitted, returns the most recent transfers. This endpoint returns up to 50 transfers in descending chronological order or pageSize, if provided.",
+        "description": "Searches for transfers involving the provided wallets. If no wallet ids are provided, searches all wallets associated with your XFT API account. If the date parameters are omitted, returns the most recent transfers. This endpoint returns up to 50 transfers in descending chronological order or pageSize, if provided.",
         "operationId": "listTransfers",
         "tags": [
           "Transfers"
@@ -7754,12 +7754,12 @@
           "cardDescriptor": {
             "type": "string",
             "description": "Descriptor that appears on cardholders' bank statements for card payments submitted through this channel.",
-            "example": "CIRCLE LLC."
+            "example": "XFT LLC."
           },
           "achDescriptor": {
             "type": "string",
             "description": "Descriptor that appears on end-users' bank statements for ACH payments submitted through this channel.",
-            "example": "CIRCLE LLC."
+            "example": "XFT LLC."
           }
         }
       },
@@ -7955,7 +7955,7 @@
       },
       "RiskEvaluation": {
         "type": "object",
-        "description": "Results of risk evaluation. Only present if the payment is denied by Circle's risk service.",
+        "description": "Results of risk evaluation. Only present if the payment is denied by XFT's risk service.",
         "nullable": true,
         "properties": {
           "decision": {
@@ -8139,7 +8139,7 @@
         "type": "string",
         "description": "Email of the user.",
         "maxLength": 1024,
-        "example": "satoshi@circle.com"
+        "example": "satoshi@XFT.com"
       },
       "PhoneNumber": {
         "type": "string",
@@ -9029,7 +9029,7 @@
           "name": {
             "type": "string",
             "description": "Name of the beneficiary.",
-            "example": "CIRCLE INTERNET FINANCIAL INC"
+            "example": "XFT INTERNET FINANCIAL INC"
           },
           "address1": {
             "type": "string",
@@ -9098,7 +9098,7 @@
         "properties": {
           "trackingRef": {
             "type": "string",
-            "description": "Circle tracking reference that needs to be set in the wire reference field.",
+            "description": "XFT tracking reference that needs to be set in the wire reference field.",
             "example": "CIR13FB13A"
           },
           "beneficiary": {
@@ -9129,7 +9129,7 @@
           },
           "trackingRef": {
             "type": "string",
-            "description": "Tracking ref that needs to be set in the public description field when you send the funds to Circle CBIT wallet.",
+            "description": "Tracking ref that needs to be set in the public description field when you send the funds to XFT CBIT wallet.",
             "example": "CIR25XSXT8"
           },
           "walletAddress": {
@@ -9174,12 +9174,12 @@
         "properties": {
           "trackingRef": {
             "type": "string",
-            "description": "Circle tracking reference that needs to be set in the CBIT public description field.",
+            "description": "XFT tracking reference that needs to be set in the CBIT public description field.",
             "example": "CIR25XSXT8"
           },
           "walletAddress": {
             "type": "string",
-            "description": "Circle wallet address that needs to be set in the CBIT recipient wallet field.",
+            "description": "XFT wallet address that needs to be set in the CBIT recipient wallet field.",
             "example": "0x7d8da35e03ef3a5ec5d5edbb961ef399dfb42d1e"
           }
         }
@@ -9255,7 +9255,7 @@
           "name": {
             "type": "string",
             "description": "Name of the beneficiary.",
-            "example": "CIRCLE INTERNET FINANCIAL INC"
+            "example": "XFT INTERNET FINANCIAL INC"
           },
           "accountNumber": {
             "type": "string",
@@ -9287,7 +9287,7 @@
         "properties": {
           "trackingRef": {
             "type": "string",
-            "description": "Circle tracking reference that needs to be set in the PIX reference field.",
+            "description": "XFT tracking reference that needs to be set in the PIX reference field.",
             "example": "CIR25XSXT8"
           },
           "ispb": {
@@ -9316,7 +9316,7 @@
           "name": {
             "type": "string",
             "description": "Name of the beneficiary.",
-            "example": "CIRCLE INTERNET FINANCIAL INC"
+            "example": "XFT INTERNET FINANCIAL INC"
           }
         }
       },
@@ -10159,7 +10159,7 @@
           "bns": {
             "type": "string",
             "description": "Blockchain Name Service (e.g. ENS) domain for the address.",
-            "example": "sample.circle"
+            "example": "sample.XFT"
           }
         }
       },
@@ -12507,7 +12507,7 @@
             "example": "0x4cebf8f90c9243a23c77e4ae20df691469e4b933b295a73376292843968f7a63"
           },
           "status": {
-            "description": "Status of the transfer. Status `pending` indicates that the transfer is in the process of running; `complete` indicates it finished successfully; `failed` indicates it failed. Circle Mint Singapore customers may have transfers in the `pending` status if the recipient addresses are not verified.",
+            "description": "Status of the transfer. Status `pending` indicates that the transfer is in the process of running; `complete` indicates it finished successfully; `failed` indicates it failed. XFT Mint Singapore customers may have transfers in the `pending` status if the recipient addresses are not verified.",
             "type": "string",
             "enum": [
               "pending",
@@ -12729,7 +12729,7 @@
         "properties": {
           "accountNumber": {
             "type": "string",
-            "description": "Virtual account number or Circle corporate Silvergate Wire account number that needs to be set as destination.",
+            "description": "Virtual account number or XFT corporate Silvergate Wire account number that needs to be set as destination.",
             "example": "11111111"
           }
         }
@@ -12908,7 +12908,7 @@
     },
     "headers": {
       "XRequestId": {
-        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with Circle support.",
+        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with XFT support.",
         "schema": {
           "type": "string",
           "format": "uuid",

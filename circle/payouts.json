@@ -2,13 +2,13 @@
   "openapi": "3.0.2",
   "servers": [
     {
-      "url": "https://api-sandbox.circle.com"
+      "url": "https://api-sandbox.XFT.com"
     }
   ],
   "info": {
     "version": "2.11.1",
     "title": "Payouts API",
-    "description": "The Circle Payouts API allows you to programmatically make fast, global payouts to your customers, vendors, and suppliers. Make payouts on supported blockchains."
+    "description": "The XFT Payouts API allows you to programmatically make fast, global payouts to your customers, vendors, and suppliers. Make payouts on supported blockchains."
   },
   "tags": [
     {
@@ -431,8 +431,8 @@
                         "address": "0x45bfcf1a6289a0b77b4d3f7d12005a05949fd8c3",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2022-07-21T20:13:35.578678Z",
@@ -554,8 +554,8 @@
                           "addressTag": "123456789",
                           "metadata": {
                             "nickname": "sample nickname",
-                            "email": "satoshi@circle.com",
-                            "bns": "sample.circle"
+                            "email": "satoshi@XFT.com",
+                            "bns": "sample.XFT"
                           },
                           "status": "pending",
                           "createDate": "2020-04-10T02:13:30.000Z",
@@ -619,8 +619,8 @@
                         "addressTag": "123456789",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2020-04-10T02:13:30.000Z",
@@ -692,8 +692,8 @@
                         "address": "0x45bfcf1a6289a0b77b4d3f7d12005a05949fd8c3",
                         "metadata": {
                           "nickname": "sample nickname",
-                          "email": "satoshi@circle.com",
-                          "bns": "sample.circle"
+                          "email": "satoshi@XFT.com",
+                          "bns": "sample.XFT"
                         },
                         "status": "pending",
                         "createDate": "2022-07-21T20:13:35.578678Z",
@@ -922,7 +922,7 @@
       },
       "RiskEvaluation": {
         "type": "object",
-        "description": "Results of risk evaluation. Only present if the payment is denied by Circle's risk service.",
+        "description": "Results of risk evaluation. Only present if the payment is denied by XFT's risk service.",
         "nullable": true,
         "properties": {
           "decision": {
@@ -1208,7 +1208,7 @@
         "type": "string",
         "description": "Email of the user.",
         "maxLength": 1024,
-        "example": "satoshi@circle.com"
+        "example": "satoshi@XFT.com"
       },
       "AddressBookRecipientMetadata": {
         "type": "object",
@@ -1224,7 +1224,7 @@
           "bns": {
             "type": "string",
             "description": "Blockchain Name Service (e.g. ENS) domain for the address.",
-            "example": "sample.circle"
+            "example": "sample.XFT"
           }
         }
       },
@@ -1421,7 +1421,7 @@
     },
     "headers": {
       "XRequestId": {
-        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with Circle support.",
+        "description": "Universally unique identifier (UUID v4) for the request. Helpful for identifying a request when communicating with XFT support.",
         "schema": {
           "type": "string",
           "format": "uuid",
